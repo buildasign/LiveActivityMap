@@ -1,0 +1,12 @@
+﻿@{
+    Response.ContentType = "text/javascript";
+    Layout = null;
+}
+
+var _zoomOutRange = @ViewBag.GoogleEarthZoomOutRange;
+var _zoomInRange = @ViewBag.GoogleEarthZoomInRange;
+var _flyToSpeed = @ViewBag.GoogleEarthFlyToSpeed;
+var _removeTimer = @ViewBag.RemoveTimeout;
+
+// HACK: Google can't find local storage
+var siteUrl = "@ViewBag.AppBaseUrl";

@@ -1,0 +1,8 @@
+*.DotSettings
+*.suo
+*.user
+LiveActivityMap/LiveActivityMap/bin/
+LiveActivityMap/LiveActivityMap/obj/
+LiveActivityMap/SampleActivityNotifier/bin/
+LiveActivityMap/SampleActivityNotifier/obj/
+LiveActivityMap/_TeamCity.LiveActivityMap/
