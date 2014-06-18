@@ -135,6 +135,7 @@
     <Compile Include="IoC\StructureMapServiceLocator.cs" />
     <Compile Include="IoC\StructureMapSetup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\GeonamesGeocoder.cs" />
     <Compile Include="Services\IGeocoder.cs" />
     <Compile Include="Services\MapquestGeocoder.cs" />
   </ItemGroup>

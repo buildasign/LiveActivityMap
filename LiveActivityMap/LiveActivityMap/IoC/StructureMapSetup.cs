@@ -44,10 +44,16 @@ namespace LiveActivityMap.IoC
                     scanner.LookForRegistries();
                 });
 
-                initalizer.For<IGeocoder>()
+				initalizer.For<IGeocoder>()
+					.Use<GeonamesGeocoder>()
+					.Ctor<string>("username")
+					.Is(ConfigurationManager.AppSettings["GeonamesAPIUsername"]);
+/*
+				initalizer.For<IGeocoder>()
                     .Use<MapquestGeocoder>()
                     .Ctor<string>("apikey")
                     .Is(ConfigurationManager.AppSettings["MapquestAPIKey"]);
+*/
 
                 initalizer.IgnoreStructureMapConfig = true;
             });
